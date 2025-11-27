@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Rock Paper Scissors Game</title>
+</head>
+<body class="h-screen w-screen flex flex-col justify-center items-center bg-gray-200">
+    <h1 class="text-3xl font-bold p-5">Rock Paper Scissors Game</h1>
+    <input type="number" id="rounds" class="p-3 bg-white rounded mb-2 w-70" placeholder="Enter number of rounds">
+    <button id="startGame" class="p-3 m-4 bg-green-500 rounded">Start Game</button>
+    <p id="roundInfo"></p>
+    <div id="count">
+
+    </div>
+    <p id="score2" class="text-xl p-5">Choose your move:</p>
+    <div class="flex gap-10">
+        <button class="choice bg-red-500 p-5 rounded text-5xl" id="rock">&#x270A;</button>
+        <button class="choice bg-green-500 p-5 rounded text-5xl" id="paper">&#x270B;</button>
+        <button class="choice bg-blue-500 p-5 rounded text-5xl" id="scissor">&#x270C;</button>
+    </div>
+    <p id="result" class="p-8  text-xl"></p>
+
+    <p  class="text-3xl p-5 font-bold" id="score">
+        Your score: <span id="user" class="text-blue-500">0</span>
+        Computer score: <span id="computer" class="text-red-500">0</span>
+    </p>
+    <button class="bg-red-500  px-8 py-3 text-white font-bold rounded-xl shadow-xl  transition duration-300 active:scale-95" id="resetbtn">Reset</button>
+    <script src="./script.js"></script>
+</body>
+</html>
